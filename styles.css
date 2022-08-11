@@ -1,0 +1,318 @@
+#cheese {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*makes header and navigation bar*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #e0dfde;
+    
+    border-bottom: 15px;
+    border-bottom-style:groove;
+    border-bottom-color: darkred;
+}
+
+header::after {
+    content: '';
+    display:table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 50px;
+    
+    position: relative;
+}
+
+nav a {
+    color:darkslategray;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    font-family: Palatino;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+nav a:hover {
+    color: darkred;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: darkred;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/*makes footer and navigation bar*/
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color:darkslategray;
+    text-decoration: none;
+}
+
+footer {
+    background: #e0dfde;
+    border-top: 15px;
+    border-top-style:ridge;
+    border-top-color: darkred;
+}
+
+.footer {
+    height: 103px;
+    text-align: center;
+    
+    font-family:Palatino;
+    font-size: 15px;
+    font-weight: 100;
+    color:darkslategray;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer a:hover {
+    color: darkred;
+}
+
+.footer li {
+    list-style: none;
+    
+    display: inline-block;
+    margin-left: 75px;
+    padding-top: 50px;
+    
+    position: relative;
+}
+
+address {
+    float:left;
+    padding:18px;
+}
+
+.logo2 {
+    
+    background-color: darkred;
+    padding:18px;
+    float: right;
+}
+
+/*wraps body for all pages */
+
+#wrapper, #homewrap {
+    background-color: snow;
+    width:1000px;
+    margin-left: 150px;
+}
+
+#homewrap {
+    height:1300px;
+}
+
+body {
+    background-color:#858585;
+    color:darkslategray;
+    font-family: Palatino;
+    font-size: 1em;
+}
+
+/*alters headings*/
+
+h1 {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 0;
+    background-color: #e0dfde;
+    text-align: center;
+    font-family:Palatino;
+    font-size: 60px;
+    color:darkred;
+    text-shadow: 2px 2px gray;
+}
+
+h2 {
+    text-align: center;
+    font-family: Palatino;
+    font-size: 30px;
+    color: darkslategray;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: darkred;
+}
+
+h2 a:visited {
+    color:darkslategray;
+    text-decoration: none;
+}
+
+h3 {
+     text-align: center;
+    font-family: Palatino;
+    font-size: 20px;
+    color: darkslategray;
+}
+
+/* h2 for the menu page*/
+
+.menu {
+    padding: 10px;
+    font-family:Palatino;
+    font-size: 40px;
+    color:darkslategray;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+p{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-bottom: 20px;
+}
+
+/*makes the menu table on the menu page*/
+
+table {
+    background-color:#e0dfde;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-collapse: collapse; 
+    
+}
+
+th {
+    background-color: darkred;
+    color:white;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+th, td {
+    font-size: .875em;
+    padding:.5em .75em;
+}
+
+td {
+    border: 1px solid #000;
+}
+
+tfoot {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*changes the wine photo on home page*/
+
+#wine {
+    float:left;
+    padding: 20px;
+    padding-left: 30px;
+    padding-top: 0;
+}
+
+/*changes the pizza photo on the home page*/
+
+#homepizza {
+    float:right;
+    padding: 20px;
+    padding-right: 30px;
+    padding-top: 0;
+}
+
+/*alters the form on contact page*/
+
+form {
+    font-family: Palatino;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #e0dfde
+}
+
+textarea {
+    font-family: Arial;
+}
+
+#family {
+    margin-left: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*all pictures in the gallery (excluding banner)*/
+
+.gallery {
+    padding:40px;
+}
+
+#pub {
+    margin-left: 295px;
+}
+
+ol {
+    margin-left: 150px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+mark {
+    background-color: azure;
+}
+
+video{
+    margin-left:225px ;
+    padding-bottom: 10px;
+}
+
+blockquote, cite {
+    color:chocolate;
+    font-weight: 200;
+    text-align: center;
+}
